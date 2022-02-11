@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriWeb Form Çalışması</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+         <nav class="nav">
+          <div class="col-md-6">
+            <div class="logo">
+               <img src="img/veriweb.png" alt="logo">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul>
+               <li><a href="#">Anasayfa</a></li>
+               <li class="menu"><a href="#" >Açılır menü</a>
+                <div class="acilir-menu">
+                  <a href="#">Başlık 1</a>
+                  <a href="#">Başlık 2</a>
+                  <a href="#">Başlık 3</a>
+                </div>
+              </li>
+               <li><a href="#">Başlık 1</a></li>
+               <li><a href="#">Başlık 2</a></li>
+               <li><a href="#">Başlık 3</a></li>
+               <li><a href="#">Başlık 4</a></li>
+            </ul>
+          </div>
+         </nav>
+
+      </header>
+      <hr>
+      <br><br><br>
+      
+      <div class="container"> 
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputad">Adınız</label>
+            <input type="email" class="form-control" id="ad">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputsifre">Soyadınız</label>
+            <input type="password" class="form-control" id="soyad">
+          </div>
+        
+        <div class="form-group col-md-6">
+          <label for="inputno">Telefon Numaranız</label>
+          <input type="text" class="form-control" id="telno">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputmail">Mail Adresiniz</label>
+          <input type="text" class="form-control" id="mailadres">
+        </div>
+    </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label >Mesajınız</label>
+                <textarea class="form-control" rows="5" placeholder="Mesajınızı giriniz.."></textarea>
+              </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputsehir">İliniz</label>
+            <select id="inputsehir" class="form-control">
+              <option selected>Samsun</option>
+              <option>İstanbul</option>
+              <option>Ankara</option>
+              <option>Konya</option>
+              <option>İzmir</option>
+            </select>
+            <hr>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputsehir">İlçe</label>
+            <select id="inputsehir" class="form-control">
+              <option selected>İlkadım</option>
+              <option>Fatih</option>
+              <option>Kadıköy</option>
+              <option>Beşiktaş</option>
+              <option>Bebek</option>
+            </select>
+            <hr>
+          </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <div class="secmeli">
+                Hobileriniz: &nbsp;
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" >
+                <label class="form-check-label" >A</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" >
+                <label class="form-check-label" >B</label>
+              </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" >
+                    <label class="form-check-label" >C</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" >
+                    <label class="form-check-label" >D</label>
+                  </div>
+                </div>
+                <hr>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <div class="secmeli">
+                Cinsiyetiniz: &nbsp;
+                <div class="form-check form-check-inline">
+                  <input  class="form-check-input" type="radio" id="Erkek" name="cinsiyet" value="Erkek">
+                  <label  class="form-check-label" for="Erkek">Erkek</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="Kadın" name="cinsiyet" value="Kadın">
+                    <label class="form-check-label" for="Kadın">Kadın</label>
+                  </div>
+                    </div>
+            <hr>
+        </div>
+        </div>
+        <div class="form-row">
+            
+            <div class="form-group col-md-12">
+        <div class="mb-2">
+            <div class="dosyasec">
+            <input class="form-control" type="file">
+            </div>
+          </div>
+          </div>
+          </div>
+        <button type="submit" class="btn btn-primary">OKUDUM ONAYLIYORUM</button>
+      </form>
+
+ 
+      </div>
+</body>
+</html>
